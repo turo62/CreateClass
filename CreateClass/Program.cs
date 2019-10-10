@@ -1,7 +1,20 @@
 ﻿using System;
 
 namespace CreateClass
+
 {
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Person kathy = new Person("Kathy", "11/11/1982", Gender.female);
+            Employee joe = new Employee("Joe", "07/06/1962", Gender.male, 60000, "Gardener", new Room(1112));
+
+            Console.WriteLine(kathy);
+            Console.WriteLine(joe);
+            _ = Console.ReadLine();
+        }
+    }
     class Person
 
     {
@@ -91,16 +104,6 @@ namespace CreateClass
                                                         + " having $" + Salary + " salary\n"
                                                         + " works as " + Profession + "\n"
                                                         + " located in Room No. " + room);
-        }
-
-        static void Main(string[] args)
-        {
-            Person kathy = new Person("Kathy", "11/11/1982", Gender.female);
-            Employee joe = new Employee("Joe", "07/06/1962", Gender.male, 60000, "Gardener", new Room(1112));
-
-            Console.WriteLine(kathy);
-            Console.WriteLine(joe);
-            _ = Console.ReadLine();
         }
     }
 }
