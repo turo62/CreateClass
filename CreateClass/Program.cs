@@ -7,7 +7,7 @@ namespace CreateClass
     {
         static void Main(string[] args)
         {
-            Employee Kovacs = new Employee("Géza", DateTime.Now, Gender.male, "léhűtő", 1000); ;
+            Employee Kovacs = new Employee("Géza", new  DateTime(1982,08,15), Gender.male, "léhűtő", 1000); ;
             Kovacs.Room = new Room(111);
             Employee Kovacs2 = (Employee)Kovacs.Clone();
             Kovacs2.Room.RoomNumber = 112;
